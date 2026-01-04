@@ -324,12 +324,16 @@ h3{
                 gap: 10px;
                 margin-right: 100px;
                 margin-bottom: 20px;
+                overflow-wrap: break-word;
+                width: 100%;
                 li{
                     display: inline-block;
                     background-color: var(--blue-400);
                     padding: 10px 20px;
                     border-radius: 15px;
-                    margin-bottom: 10px;
+                    height: auto;
+                    width: 100%;
+                    overflow: auto;
                 }
 
             }
@@ -363,6 +367,7 @@ h3{
             }
             @media (max-width:1024px) {
                 grid-template-rows: repeat(8,1fr);
+                overflow: auto;
                 
             }
             @media (max-width:768px) {
@@ -370,6 +375,7 @@ h3{
                 flex-direction: column;
                 gap: 30px;
                 height: auto;
+                overflow:auto;
             }
             &:nth-child(1){
                 grid-column: span 1;
